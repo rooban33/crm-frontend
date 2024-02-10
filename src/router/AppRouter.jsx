@@ -49,6 +49,7 @@ const Company = lazy(() => import('@/pages/Company'));
 
 const About = lazy(() => import('@/pages/About'));
 const Verify = lazy(() => import('@/pages/Verify'));
+const Integration = lazy(() => import('@/pages/Integration'));
 
 export default function AppRouter() {
   let element = useRoutes([
@@ -79,6 +80,10 @@ export default function AppRouter() {
     {
       path: '/customer',
       element: <Customer />,
+    },
+    {
+      path: '/integration',
+      element: <Integration />,
     },
     {
       path: '/people',

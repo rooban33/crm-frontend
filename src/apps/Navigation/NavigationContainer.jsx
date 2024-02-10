@@ -25,6 +25,7 @@ import {
   ShopOutlined,
   FilterOutlined,
   WalletOutlined,
+  ShrinkOutlined,
 } from '@ant-design/icons';
 
 const { Sider } = Layout;
@@ -57,6 +58,11 @@ function Sidebar({ collapsible, isMobile = false }) {
       key: 'customer',
       icon: <CustomerServiceOutlined />,
       label: <Link to={'/customer'}>{translate('customer')}</Link>,
+    },
+    {
+      key: 'integration',
+      icon:   <ShrinkOutlined />   ,
+      label: <Link to={'/integration'}>{translate('integration')}</Link>,
     },
     {
       key: 'people',

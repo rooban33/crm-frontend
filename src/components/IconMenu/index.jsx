@@ -9,6 +9,7 @@ import {
   UserOutlined,
   CreditCardOutlined,
   BankOutlined,
+  ShrinkOutlined,
 } from '@ant-design/icons';
 
 export const IconMenu = ({ name }) => {
@@ -24,6 +25,7 @@ export const IconMenu = ({ name }) => {
     CreditCardOutlined: CreditCardOutlined,
     BankOutlined: BankOutlined,
     Default: DesktopOutlined,
+    ShrinkOutlined:ShrinkOutlined,
   };
 
   const IconTag = elements[name || 'Default'] || SettingOutlined;
